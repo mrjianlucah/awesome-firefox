@@ -80,7 +80,7 @@ user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("network.proxy.socks_remote_dns", true);
 
 // New profile switcher
-user_pref("browser.profiles.enabled", true);
+// user_pref("browser.profiles.enabled", true);
 
 // Password and forms
 user_pref("signon.rememberSignons", false);   // Disable Ask to save logins and passwords for websites
