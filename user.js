@@ -59,6 +59,12 @@ user_pref("toolkit.telemetry.unified", false);
 user_pref("toolkit.telemetry.unifiedIsOptIn", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
 
+// Disable user send pings to Mozilla
+user_pref("browser.send_pings", false);
+
+// DNS over HTTPS
+user_pref("network.trr.mode", 3);
+
 // Don't warn when opening about:config 
 user_pref("browser.aboutConfig.showWarning", false);
 
@@ -80,7 +86,7 @@ user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("network.proxy.socks_remote_dns", true);
 
 // New profile switcher
-// user_pref("browser.profiles.enabled", true);
+// user_pref("browser.profiles.enabled", false);
 
 // Password and forms
 user_pref("signon.rememberSignons", false);   // Disable Ask to save logins and passwords for websites
@@ -116,7 +122,9 @@ user_pref("browser.newtab.preload", false);
 user_pref("browser.onboarding.enabled", false);        // Hide onboarding tour (uses Google Analytics)
 
 // Tracking
+user_pref("browser.contentblocking.category", "strict");
 user_pref("privacy.trackingprotection.enabled", true);                   // Turn on tracking protection
+user_pref("privacy.trackingprotection.pbmode.enabled"), true;
 user_pref("privacy.trackingprotection.cryptomining.enabled", true);      // Enable cryptomining protection
 user_pref("privacy.trackingprotection.socialtracking.enabled", true);    // Enable social protection
 user_pref("privacy.globalprivacycontrol.enabled", true);                 // Successor to DNT
