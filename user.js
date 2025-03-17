@@ -121,6 +121,9 @@ user_pref("browser.newtabpage.enabled", false);        // Set "New tabs"
 user_pref("browser.newtab.preload", false);
 user_pref("browser.onboarding.enabled", false);        // Hide onboarding tour (uses Google Analytics)
 
+// Tab Groups
+user_pref("browser.tabs.groups.enabled", true); // Enable Tab Groups
+
 // Tracking
 user_pref("browser.contentblocking.category", "strict");
 user_pref("privacy.trackingprotection.enabled", true);                   // Turn on tracking protection
