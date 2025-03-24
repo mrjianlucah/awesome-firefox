@@ -16,6 +16,10 @@ user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("browser.discovery.enabled", false);  // Disable "Allow Firefox to make personalized extension recommendations"
 user_pref("datareporting.healthreport.uploadEnabled", false);  // Disable "Allow Firefox to send technical and interaction data to Mozilla"
 
+// Disable hardware acceleration
+user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);
+user_pref("layers.acceleration.disabled", true);
+
 // Disable Mozilla VPN
 user_pref("browser.privatebrowsing.vpnpromourl", "");
 
