@@ -16,6 +16,10 @@ user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("browser.discovery.enabled", false);  // Disable "Allow Firefox to make personalized extension recommendations"
 user_pref("datareporting.healthreport.uploadEnabled", false);  // Disable "Allow Firefox to send technical and interaction data to Mozilla"
 
+// Disable AI
+user_pref("browser.ml.chat.enabled", false);
+user_pref("browser.ml.enable", false);
+
 // Disable hardware acceleration
 user_pref("browser.preferences.defaultPerformanceSettings.enabled", false);
 user_pref("layers.acceleration.disabled", true);
@@ -29,6 +33,9 @@ user_pref("extensions.pocket.enabled", false);
 // Disable recommdations
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);   // Disable "Recommend extensions as you browse"
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false); // Disable "Recommend features as you browse"
+
+// Disable smart tab group
+user_pref("browser.tabs.groups.smart.enabled", false);
 
 // Disable stuff
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
@@ -88,6 +95,18 @@ user_pref("browser.preferences.moreFromMozilla", false);
 
 // Make sure DNS is sent through the proxy server when using a SOCKS v5 proxy
 user_pref("network.proxy.socks_remote_dns", true);
+
+// Memory Tweaks
+user_pref("browser.cache.memory.enable", false);
+user_pref("browser.cache.memory.capacity", 512000);
+user_pref("browser.cache.disk.enable", false);
+user_pref("network.prefetch-next", false);
+user_pref("browser.sessionhistory.max_total_viewers", 10);
+user_pref("browser.sessionstore.interval", 600000);
+user_pref("accessibility.force_disabled", 1);
+user_pref("network.ssl_tokens_cache_capacity", 32768);
+user_pref("dom.ipc.processCount", 1);
+user_pref("dom.ipc.processCount.webIsolated", 1);
 
 // New profile switcher
 // user_pref("browser.profiles.enabled", false);
